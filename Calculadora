@@ -1,0 +1,32 @@
+EDWARD
+#include <iostream>
+using namespace std;
+int main()
+{
+    int A,B,C;
+    cout<<"ingresa dos numeros para la SUMA"<<endl;
+    cout<<"ingresa el primer numero"<<endl;
+    cin>>A;
+    cout<<"ingresa el segundo numero"<<endl;
+    cin>>B;
+    C=A+B;
+    cout<<"la suma de A+B=C"<<endl;
+    int D,E,F;
+    cout<<"ingresa dos numeros para la MULTIPLICACION"<<endl;
+    cout<<"ingresa el primer numero"<<endl;
+    cin>>D;
+    cout<<"ingresa el segundo numero"<<endl;
+    cin>>E;
+    F=D*E;
+    cout<<"la suma de D+E=F"<<endl;
+    int G,H,I;
+    cout<<"ingresa dos numeros para la DIVISION"<<endl;
+    cout<<"ingresa el primer numero"<<endl;
+    cin>>G;
+    cout<<"ingresa el segundo numero"<<endl;
+    cin>>H;
+    I=G/H;
+    cout<<"la suma de G+H=I"<<endl;
+
+    return 0;
+}
