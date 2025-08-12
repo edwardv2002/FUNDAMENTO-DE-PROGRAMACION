@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace stdÑ
+int main()
+{
+    int A,B,C
+    cout<<"ingresa en balor de ALTURA"<<endl;
+    cin>>A;
+    cout<<"ingresa en balor de BASE"<<endl;
+    cin>>B;
+    cout<<"La hipotenusa es"<<endl;
+    C=(A*B)/2
+
+    return 0;
+}
