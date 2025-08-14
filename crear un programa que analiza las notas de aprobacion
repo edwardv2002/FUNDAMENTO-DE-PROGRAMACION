@@ -1,0 +1,22 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double p1, p2, p3, ef, pf;
+    cout << "Ingrese P1, P2 y P3 (0..100): ";
+    if(!(cin >> p1 >> p2 >> p3)) return 0;
+    cout << "Ingrese Examen Final (0..100): ";
+    if(!(cin >> ef)) return 0;
+    cout << "Ingrese Proyecto Final (0..100): ";
+    if(!(cin >> pf)) return 0;
+
+    double parciales40 = ((p1 + p2 + p3) / 3.0) * 0.40;
+    double ef40 = ef * 0.40;
+    double pf20 = pf * 0.20;
+    double nota = parciales40 + ef40 + pf20;
+
+    cout << fixed << setprecision(2);
+    cout << "Nota final (0..100): " << nota << "\n";
+    return 0;
+}
