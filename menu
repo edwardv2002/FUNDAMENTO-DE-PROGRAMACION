@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int cantidad,opcion;
+    float precio, tp, suma = 0;
+    do 
+    {
+        cout << "MENU" << endl;
+        cout << "1.Hamburguesa" << endl;
+        cout << "2.Hamburguesa con queso" << endl;
+        cout << "3.papas fritas" << endl;
+        cout << "4.soda" << endl;
+        cout << "salir" << endl;
+        cout << "ingrese su opcion" << endl;
+        cin >> opcion;
+        switch (opcion)
+        {
+            1:precio = 3;
+            break;
+            2:precio = 5;
+            break;
+            3:precio = 2;
+            break;
+            4:precio = 2.5;
+            break;
+            0: cout << "Saliendo";
+        default:
+            cout << "Error";
+        }
+        if (precio > 0) 
+        {
+            cout << "ingrese la cantidad";
+            cin >> cantidad;
+            tp = precio * cantidad;
+            suma = suma * cantidad;
+        }
+    } while (opcion != 0);
+    cout << "el total es" << suma << endl;
+
+}
