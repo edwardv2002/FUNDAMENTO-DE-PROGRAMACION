@@ -1,0 +1,17 @@
+def main():
+    # Aproximación de pi
+    pi = 3.1416
+
+    # Entrada del usuario
+    r = float(input("Introduce el radio de la circunferencia: "))
+
+    # Cálculo del perímetro y el área
+    perimetro = 2 * pi * r
+    area = pi * r * r
+
+    # Salida de resultados
+    print("Perímetro: {:.2f}".format(perimetro))
+    print("Área: {:.2f}".format(area))
+
+if __name__ == "__main__":
+    main()
