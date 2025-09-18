@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, i = 1, valor, mayor, menor, suma = 0;
+   float promedio;
+
+    cout << "Ingrese la cantidad de numeros: ";
+    cin >> n;
+
+    while (i <= n) {
+        cout << "Ingrese el numero " << i << ": ";
+        cin >> valor;
+
+        if (i == 1) {
+            mayor = valor;
+            menor = valor;
+        } else {
+            if (valor > mayor) {
+                mayor = valor;
+            }
+            if (valor < menor) {
+                menor = valor;
+            }
+        }
+
+        suma += valor;
+        i++;
+    }
+
+    promedio = (float)suma / n;
+
+    cout << "El mayor es: " << mayor << endl;
+    cout << "El menor es: " << menor << endl;
+    cout << "El promedio es: " << promedio << endl;
+
+    return 0;
+}
